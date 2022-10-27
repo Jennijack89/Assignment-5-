@@ -43,7 +43,7 @@
     <div class="row" ">
       <main class="col-md-6 text-bg-primary">
         <h2></h2>
-        <form action="#">
+        <form onsubmit="return displayFormValues()">
           <div>
           <label for="text" class="form-label"> First & Last Name </label>
           <input type="text" class="form-control" id="fLname" placeholder="Jane Doe" name="name">
@@ -84,7 +84,7 @@
 	          <textarea class="form-control" rows="5" id="comment" name="text"></textarea><br>
             
           <div>
-            <button type="submit" class="btn btn-info">Submit</button>
+            <button type="submit" class="btn btn-info" id="myBtn">Submit</button>
           </div><br>
       </main>
 

@@ -3,9 +3,18 @@ html, body {
   width: 100%;
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-}
+/*---CSS for if you want you image to be the main element
+so having it not resize is important---*/
 .carousel-inner > .carousel-item > img { 
   height:360px;
 }
+
+/*-------CSS for is you want to make an image a background
+element with main content ontop of it--------*/
+/*.carousel-item {
+  height: 360px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}*/

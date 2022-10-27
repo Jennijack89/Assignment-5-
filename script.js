@@ -12,3 +12,8 @@ function addLastUpdate(){
   document.getElementById("modified").innerHTML = "Last modified:" + d.toDateString();
 }
 
+document.getElementById("myBtn").addEventListener("click", displayFormValues);
+function displayFormValues(){
+  let formvalues = document.getElementById("fLname").value;
+  document.getElementById("content").innerHTML = formvalues;
+}
