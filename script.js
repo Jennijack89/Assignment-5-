@@ -14,6 +14,13 @@ function addLastUpdate(){
 
 document.getElementById("myBtn").addEventListener("click", displayFormValues);
 function displayFormValues(){
-  let formvalues = document.getElementById("fLname").value;
-  document.getElementById("content").innerHTML = formvalues;
+  let nameV = document.getElementById("fLname").value;
+  let emailV = document.getElementById('email').value;
+  let genreV = document.getElementById('gselection').value;
+  let commentV = document.getElementById('comment').value;
+  
+  document.getElementById("name1").innerHTML = nameV;
+  document.getElementById("email1").innerHTML = emailV;
+  document.getElementById("genrV").innerHTML = genreV;
+  document.getElementById("comm").innerHTML = commentV;
 }
